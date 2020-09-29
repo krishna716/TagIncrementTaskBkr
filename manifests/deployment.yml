@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: krishnatagincrementtaskbkr 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: krishnatagincrementtaskbkr
+  template:
+    metadata:
+      labels:
+        app: krishnatagincrementtaskbkr 
+    spec:
+      containers:
+        - name: krishnatagincrementtaskbkr 
+          image: bkrcr.azurecr.io/krishnatagincrementtaskbkr
+          ports:
+          - containerPort: 80
