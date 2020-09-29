@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: bkr
-        image: bkrcr.azurecr.io/bkr:v7 #bkracr.azurecr.io/bkr:latest #bkracr.azurecr.io/bkr:v2 
+        image: bkrcr.azurecr.io/bkr:v8 #bkracr.azurecr.io/bkr:latest #bkracr.azurecr.io/bkr:v2 
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
   selector:
