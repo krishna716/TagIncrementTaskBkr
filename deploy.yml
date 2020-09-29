@@ -1,0 +1,35 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bkr-deployment
+  labels:
+    app: bkr
+spec:
+  replicas:  5 # 1 #5
+  template:
+    metadata:
+      name: bkr
+      labels:
+        app: bkr
+    spec:
+      containers:
+      - name: bkr
+        image: bkrcr.azurecr.io/bkr:v5 #bkracr.azurecr.io/bkr:latest #bkracr.azurecr.io/bkr:v2 
+        imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: bkr
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: bkr-service
+spec:
+  selector:
+    app: bkr
+  ports:
+    - port: 80
+  type: LoadBalancer  #NodePort

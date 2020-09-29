@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/eOp7d/rrtU8HRRC1IRaqleHOZb6z04Yt7U91ytrz8YkVyLm0NKDQuzjB1vOvpOIyRGXuV18FJaHUf6w+C7/Mw==",
+  "success": true,
+  "projectFilePath": "C:\\remotework\\TagIncrementDemoApp\\TagIncrementAKSApp\\TagIncrementAKSApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}
