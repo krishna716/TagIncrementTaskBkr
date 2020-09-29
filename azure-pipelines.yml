@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '9010473f-5c4e-47f6-b580-749e05485dec'
   imageRepository: 'krishnatagincrementtaskbkr'
   containerRegistry: 'bkrcr.azurecr.io'
-  dockerfilePath: 'DockerBkrcr'
+  dockerfilePath: 'dockerfile'
   tag: '$(Build.BuildId)'
   
   # Agent VM image name
