@@ -39,7 +39,7 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          RELESE-$(tag)
+          RELEASE-$(tag)
           
     - upload: manifests
       artifact: manifests
