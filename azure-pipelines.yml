@@ -14,7 +14,7 @@ variables:
   imageRepository: 'krishnatagincrementtaskbkr'
   containerRegistry: 'bkrcr.azurecr.io'
   dockerfilePath: 'dockerfile'
-  tag: 'RELEASE-$(Build.BuildId)'
+  tag: '$(Build.BuildId)'
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -36,4 +36,4 @@ stages:
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
-          $(tag)
+          RELEASE-$(tag)
