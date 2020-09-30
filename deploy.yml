@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: bkr
-     #   image: bkrcr.azurecr.io/bkr:v9 #bkracr.azurecr.io/bkr:latest #bkracr.azurecr.io/bkr:v2 
+        image: bkrcr.azurecr.io/bkr:v20 #ipasqacontainerregistry.azurecr.io/tagincrementaksapp:dev2 #bkracr.azurecr.io/bkr:latest #bkracr.azurecr.io/bkr:v2 
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
   selector:
