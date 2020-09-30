@@ -19,10 +19,10 @@
 <div>
 	<h5 class="text-center">Metrics</h5>
 	<table width="500" align="center" class="table-striped table-hover">
-		<tr>
+		@*<tr>
 			<td>Tag</td>
 			<td>Todo</td>
-		</tr>
+		</tr>*@
 		<tr>
 			<td>Containerized</td>
 			<td>@(Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") is object ? "true" : "false")</td>
