@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: krishnatagincrementtaskbkr 
-          image: bkrcr.azurecr.io/krishnatagincrementtaskbkr:v1
+          image: bkrcr.azurecr.io/krishnatagincrementtaskbkr
           ports:
           - containerPort: 80
