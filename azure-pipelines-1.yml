@@ -15,7 +15,7 @@ variables:
   imageRepository: 'krishnatagincrementtaskbkr'
   containerRegistry: 'bkrcr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: RELESE-'$(Build.BuildId)'
   imagePullSecret: 'bkrcr14494e81-auth'
 
   # Agent VM image name
